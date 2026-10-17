@@ -33,7 +33,7 @@ class BuildTests(unittest.TestCase):
                 self.assertIn('El oso bailó.', pdf[11].get_text())
                 self.assertIn('El oso se cayó.', pdf[12].get_text())
                 self.assertEqual([row[1] for row in pdf.get_toc()], ['Pato', 'Gato', 'Mono', 'Vaca', 'Llama', 'Oso'])
-            self.assertEqual(len(list((out/'assets/images').glob('*.png'))), 12)
+            self.assertEqual(len(list((out/'assets/images').glob('*.png'))), 13)
             self.assertEqual(sorted(p.name for p in out.glob('*.zip')), ['01-se-cayo-assets.zip'])
             self.assertFalse((out/'pages').exists())
             self.assertFalse((out/'illustrations').exists())

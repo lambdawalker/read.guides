@@ -9,7 +9,7 @@ Small illustrated Spanish books for reading together. **Se cayó** has six anima
 Only two release files:
 
 - **01-se-cayo.pdf** — landscape book, 12 × 8 inches, with bookmarks for pato, gato, mono, vaca, llama and oso.
-- **01-se-cayo-assets.zip** — one `assets/` folder with twelve separate landscape PNG illustrations, `book.yaml`, font/license and editorial notes.
+- **01-se-cayo-assets.zip** — one `assets/` folder with the group cover and twelve separate landscape PNG illustrations, `book.yaml`, font/license and editorial notes.
 
 The PDF has 13 pages: cover, then six two-page stories. Llama occupies story pages 9–10; bear occupies 11–12. Illustrations are text-free, approximately 1086 pixels wide; text is added by Python as selectable PDF text. The renderer preserves image proportions. This is a reading/home-print PDF, without press bleed or booklet imposition.
 

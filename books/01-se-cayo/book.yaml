@@ -1,6 +1,6 @@
 schema_version: 1
 id: 01-se-cayo
-version: 1.1.0
+version: 1.1.1
 title: Se cayó
 language: es-MX
 font: fonts/DejaVuSans.ttf
@@ -8,7 +8,7 @@ font_size_pt: 32
 text_baseline: 0.105
 text_color: '#182B36'
 cover:
-  image: images/02-pato.png
+  image: images/00-cover.png
   text: Se cayó
   subtitle: Libro 1 · Animales
 pages:
