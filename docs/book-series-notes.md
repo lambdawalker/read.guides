@@ -48,7 +48,7 @@ These are working editorial notes, not a finalized implementation specification.
 | RR | Future; digraph | Strong R sound between vowels | After introduction of R | Not assessed |
 | GE/GI, GUE/GUI, GÜE/GÜI, CE/CI | Later spelling patterns | Existing letters with additional rules | Unscheduled | Not assessed |
 
-Examples must respect the permitted set: tigre introduces R and a consonant cluster, so it is not suitable for a strict Books 1–2 vocabulary despite having only two syllables. Candidate animal words include gato, pato, mono, vaca, puma, llama, lobo and tucán. Sentence words must also be checked, not just animal names.
+Animal names may include letters outside the initial set when needed. Prefer easy, familiar names and record incidental extra letters without treating them as a formal series introduction. For example, tigre adds R and the gr cluster, so it is more complex than pato despite both having two syllables. Candidate animal words include gato, pato, mono, vaca, puma, llama, lobo and tucán. Sentence words must also be checked, not just animal names.
 
 ## Proposed series cadence
 
@@ -68,8 +68,8 @@ Examples must respect the permitted set: tigre introduces R and a consonant clus
 - Preserve character appearance between the action and fall illustrations.
 - Place large, clear text on a quiet, light area with consistent positioning.
 - Generate art without embedded text; the Python renderer adds the exact Spanish wording.
-- Decide whether Book 1 is one continuous animal story or several two-page animal mini-stories before choosing the complete manuscript.
-- Proposed production defaults: square pages, one sentence per page, cover separate from story pages. Physical dimensions, page count and typeface remain to be selected.
+- Confirmed structure: six animals, one two-page story per animal, for twelve story pages.
+- Proposed production defaults: square pages, one sentence per page, cover separate from story pages. Physical dimensions and typeface remain to be selected; twelve story pages are confirmed.
 
 ## Proposed production workflow
 
@@ -77,4 +77,4 @@ One folder per book contains images and book.yaml. YAML describes ordered pages,
 
 ## Next decision
 
-Choose Book 1's structure and scope: one animal throughout, or multiple two-page animal mini-stories. Then approve exact sentences, page format and a visual sample before producing the full book.
+Refine illustration style together using the first two-page story: “El pato caminó.” / “El pato se cayó.” Create a preview with expressive, slightly distorted anatomy, visible hand-drawn lines, colorful paint splashes and a quiet text area. The preview is an art-direction study, not a final production asset. Review the style before producing the other five stories.
