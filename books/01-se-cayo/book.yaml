@@ -1,0 +1,52 @@
+schema_version: 1
+id: 01-se-cayo
+version: 1.0.0
+title: Se cayó
+language: es-MX
+page_size_inches: 8
+dpi: 200
+font: fonts/DejaVuSans.ttf
+font_size_pt: 32
+text_baseline: 0.105
+text_color: '#182B36'
+cover:
+  image: images/02-pato.png
+  text: Se cayó
+  subtitle: Libro 1 · Animales
+pages:
+- image: images/01-pato.png
+  text: El pato caminó.
+  animal: pato
+- image: images/02-pato.png
+  text: El pato se cayó.
+  animal: pato
+- image: images/03-gato.png
+  text: El gato saltó.
+  animal: gato
+- image: images/04-gato.png
+  text: El gato se cayó.
+  animal: gato
+- image: images/05-mono.png
+  text: El mono bailó.
+  animal: mono
+- image: images/06-mono.png
+  text: El mono se cayó.
+  animal: mono
+- image: images/07-vaca.png
+  text: La vaca caminó.
+  animal: vaca
+- image: images/08-vaca.png
+  text: La vaca se cayó.
+  animal: vaca
+- image: images/09-llama.png
+  text: La llama saltó.
+  animal: llama
+- image: images/10-llama.png
+  text: La llama se cayó.
+  animal: llama
+- image: images/11-oso.png
+  text: El oso bailó.
+  animal: oso
+- image: images/12-oso.png
+  text: El oso se cayó.
+  animal: oso

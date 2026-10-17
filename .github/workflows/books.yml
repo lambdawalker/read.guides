@@ -1,0 +1,74 @@
+name: Build and release books
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: books-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install uv and dependencies
+        run: |
+          python -m pip install uv
+          uv sync --locked
+      - name: Test renderer
+        run: uv run python -m unittest discover -s tests -v
+      - name: Build book and download bundles
+        run: uv run python scripts/build_book.py books/01-se-cayo/book.yaml --output dist/01-se-cayo
+      - name: Save build downloads
+        uses: actions/upload-artifact@v7
+        with:
+          name: book-01-downloads
+          path: |
+            dist/01-se-cayo/*.pdf
+            dist/01-se-cayo/*.zip
+            dist/01-se-cayo/*.json
+            dist/01-se-cayo/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 30
+      - name: Read release version
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        id: version
+        run: |
+          uv run python - <<'PY'
+          import os, re, yaml
+          from pathlib import Path
+          data = yaml.safe_load(Path('books/01-se-cayo/book.yaml').read_text(encoding='utf-8'))
+          version = str(data['version'])
+          if not re.fullmatch(r'\d+\.\d+\.\d+', version):
+              raise SystemExit('version must be MAJOR.MINOR.PATCH')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f'tag=book-01-v{version}\n')
+          PY
+      - name: Publish versioned release
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ steps.version.outputs.tag }}
+        run: |
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            echo "Release $RELEASE_TAG already exists; kept unchanged. Bump book.yaml version for a new release."
+          else
+            gh release create "$RELEASE_TAG" \
+              --target "$GITHUB_SHA" \
+              --title "Se cayó · Libro 1 · $RELEASE_TAG" \
+              --notes-file docs/release-notes.md \
+              dist/01-se-cayo/*.pdf dist/01-se-cayo/*.zip \
+              dist/01-se-cayo/manifest.json dist/01-se-cayo/SHA256SUMS.txt
+          fi

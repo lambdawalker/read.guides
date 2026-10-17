@@ -1,6 +1,6 @@
 # Reading books: editorial brief and letter tracker
 
-These are working editorial notes, not a finalized implementation specification.
+Editorial notes and ongoing letter tracker. Book 1 implementation is described in book-production-design.md.
 
 ## Confirmed goals
 
@@ -60,10 +60,10 @@ Animal names may include letters outside the initial set when needed. Prefer eas
 - This interprets “new letters every three books” as an introduction at the start of each three-book cycle beginning with Book 3. Sequence and pace remain adjustable; coverage does not imply mastery.
 - New spelling patterns and consonant clusters should be tracked separately from new letters.
 
-## Book 1: proposed editorial direction
+## Book 1: approved editorial direction
 
 - Animal theme, short sentences, repeated ending containing **se cayó**.
-- A provisional two-page example: “El pato caminó.” / “El pato se cayó.” Both sentences use past tense and only in-scope consonants.
+- Approved first story: “El pato caminó.” / “El pato se cayó.” Both sentences use past tense and only in-scope consonants.
 - Keep falls gentle and amusing, with the animal visibly fine.
 - Preserve character appearance between the action and fall illustrations.
 - Place large, clear text on a quiet, light area with consistent positioning.
@@ -77,4 +77,4 @@ One folder per book contains images and book.yaml. YAML describes ordered pages,
 
 ## Next decision
 
-Refine illustration style together using the first two-page story: “El pato caminó.” / “El pato se cayó.” Create a preview with expressive, slightly distorted anatomy, visible hand-drawn lines, colorful paint splashes and a quiet text area. The preview is an art-direction study, not a final production asset. Review the style before producing the other five stories.
+The first book is implemented: pato, gato, mono, vaca, llama and oso; twelve story pages plus a cover. The approved rule is to make the protagonist stand out: saturated animal, strong dark contours, pale low-contrast background, and neighboring colors that contrast with the animal. The duck uses blue, purple and pink flowers instead of orange/yellow leaves. Book 1 covers the initial consonants except D; Book 2 must include D and reinforce the rest. No reading mastery is inferred from this coverage.
