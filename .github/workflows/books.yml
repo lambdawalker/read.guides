@@ -37,9 +37,7 @@ jobs:
           name: book-01-downloads
           path: |
             dist/01-se-cayo/*.pdf
-            dist/01-se-cayo/*.zip
-            dist/01-se-cayo/*.json
-            dist/01-se-cayo/SHA256SUMS.txt
+            dist/01-se-cayo/01-se-cayo-assets.zip
           if-no-files-found: error
           retention-days: 30
       - name: Read release version
@@ -69,6 +67,5 @@ jobs:
               --target "$GITHUB_SHA" \
               --title "Se cayó · Libro 1 · $RELEASE_TAG" \
               --notes-file docs/release-notes.md \
-              dist/01-se-cayo/*.pdf dist/01-se-cayo/*.zip \
-              dist/01-se-cayo/manifest.json dist/01-se-cayo/SHA256SUMS.txt
+              dist/01-se-cayo/01-se-cayo.pdf dist/01-se-cayo/01-se-cayo-assets.zip
           fi

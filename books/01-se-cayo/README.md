@@ -1,6 +1,6 @@
 # Se cayó
 
-Portada y doce páginas: seis cuentos, dos páginas por animal.
+Portada y doce páginas horizontales (12 × 8 pulgadas): seis cuentos, dos páginas por animal.
 
 | Páginas | Acción | Caída |
 |---|---|---|
@@ -22,6 +22,6 @@ El libro 1 usa C, T, M, N, L, LL, B, V, P, G, Y y S. D queda pendiente para el l
 
 Acuarela, gouache y crayón de aspecto manual; textura de papel, anatomía graciosa y ligeramente exagerada. El protagonista tiene los contornos más oscuros y colores más intensos. Fondos pálidos y suaves. Las flores, cojines y otros objetos cercanos contrastan con el animal: azul, lavanda y rosa alrededor de amarillos, naranjas y marrones. Personaje consistente en las dos páginas. Caídas suaves y sin daño. El 22% inferior se reserva para texto.
 
-Generado con la herramienta integrada de imágenes; las escenas se crearon como pares para conservar la identidad. Los archivos images/ son paneles separados sin letras. El renderizador añade las frases de book.yaml. El PDF y los PNG usan la misma composición.
+Generado con la herramienta integrada de imágenes; las escenas se crearon como pares para conservar la identidad. Los archivos images/ son paneles separados sin letras. El renderizador añade las frases de book.yaml. Cada historia tiene dos archivos PNG horizontales separados, uno por escena. El PDF conserva sus proporciones. La entrega contiene solo el PDF y la carpeta assets (comprimida en un ZIP para descargar).
 
 Para reconstruir desde este paquete, use scripts/build_book.py del repositorio read.guides y pase la ruta de este book.yaml. La fuente DejaVu Sans y su licencia se incluyen en fonts/.

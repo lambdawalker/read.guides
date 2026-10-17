@@ -1,14 +1,12 @@
-# Se cayó · Libro 1
+# Se cayó · Libro 1 · Edición horizontal
 
-Seis animales, seis cuentos de dos páginas: pato, gato, mono, vaca, llama y oso.
+Seis cuentos completos, dos imágenes y dos páginas por animal: pato, gato, mono, vaca, llama y oso. Portada y doce páginas horizontales de 12 × 8 pulgadas. El PDF incluye marcadores para encontrar cada cuento; llama está en las páginas de cuento 9–10 y oso en 11–12.
 
-- **01-se-cayo.pdf**: portada y doce páginas, formato cuadrado de 8 pulgadas.
-- **01-se-cayo-pages.zip**: todas las páginas PNG con texto, incluida la portada.
-- **01-se-cayo-illustrations.zip**: doce ilustraciones PNG sin texto.
-- **01-se-cayo-assets.zip**: ilustraciones, book.yaml, fuente y licencia; permite editar el texto y reconstruir el libro.
-- **manifest.json**: orden de las páginas y frases.
-- **SHA256SUMS.txt**: sumas de comprobación de los archivos.
+Solo dos descargas:
 
-Texto añadido por Python. Las ilustraciones fueron creadas con asistencia de IA siguiendo la dirección artística aprobada: protagonista destacado, contornos oscuros, fondos suaves y colores contrastantes.
+- **01-se-cayo.pdf**: libro completo con texto.
+- **01-se-cayo-assets.zip**: carpeta `assets/` con doce ilustraciones PNG horizontales sin texto, `book.yaml`, fuente/licencia y notas editoriales.
 
-PDF para lectura y uso doméstico; no incluye sangrado ni imposición para imprenta. Los PNG se exportan a 1600 × 1600; las ilustraciones originales tienen aproximadamente 880 × 887 píxeles, por lo que la exportación no añade detalle a la pintura.
+Los protagonistas conservan colores intensos y contornos oscuros sobre fondos suaves y contrastantes. Las ilustraciones se recompusieron para formato horizontal; no se estiraron. Texto añadido por Python, con «cayó» en los seis cuentos. Arte creado con asistencia de IA y revisado visualmente.
+
+Uso doméstico/lectura; sin sangrado ni imposición de imprenta. Las ilustraciones tienen 1086 píxeles de ancho. Para cambiar frases, edite book.yaml y reconstruya con el script del repositorio.

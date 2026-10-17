@@ -21,3 +21,8 @@ GitHub Releases fit downloadable books better than GitHub Packages. Every PR/mai
 ## Verification
 
 Check PDF page count, exact accented sentences and six occurrences of se cayó. Check PNG counts and archive contents, missing asset behavior, source/output separation and overflow. Visually inspect a contact sheet and full-size duck pages. Observe Actions to verify publication, and report any access/policy failure honestly.
+
+
+## Revision 1.1.0 (approved format change)
+
+The user requested landscape illustrations, two separate images per story, and only the assets folder and PDF. This supersedes the square-page and multiple-ZIP decisions above. All twelve illustrations have been recomposed to landscape. PDF is 12 × 8 inches with preserved image proportions; assets contains the twelve text-free PNGs, YAML, font/license and notes. Releases attach only PDF and assets ZIP. The six-animal list is validated against two consecutive pages each; tests explicitly verify llama and bear and all six PDF bookmarks. No rendered-page or standalone illustration ZIPs, manifest or checksum download is produced.

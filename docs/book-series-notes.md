@@ -69,12 +69,15 @@ Animal names may include letters outside the initial set when needed. Prefer eas
 - Place large, clear text on a quiet, light area with consistent positioning.
 - Generate art without embedded text; the Python renderer adds the exact Spanish wording.
 - Confirmed structure: six animals, one two-page story per animal, for twelve story pages.
-- Proposed production defaults: square pages, one sentence per page, cover separate from story pages. Physical dimensions and typeface remain to be selected; twelve story pages are confirmed.
+- Approved production defaults: landscape pages (12 × 8 inches), one sentence per page, cover separate from story pages. DejaVu Sans, twelve story pages plus cover.
 
 ## Proposed production workflow
 
-One folder per book contains images and book.yaml. YAML describes ordered pages, exact text, image paths, and optional layout settings. A Python command runnable with uv renders numbered PNG pages and the assembled PDF from the same layout. Page size, margins, font and output resolution should be configurable. Validate missing assets, font availability and text overflow before export. Finalize the manuscript before generating all illustrations.
+One folder per book contains images and book.yaml. YAML describes ordered pages, exact text, image paths, and optional layout settings. A Python command runnable with uv assembles the landscape PDF from twelve separate text-free PNG illustrations. Page width, height, font and text placement are configurable. Validate missing assets, font availability and text overflow before export. Finalize the manuscript before generating all illustrations.
 
 ## Next decision
 
 The first book is implemented: pato, gato, mono, vaca, llama and oso; twelve story pages plus a cover. The approved rule is to make the protagonist stand out: saturated animal, strong dark contours, pale low-contrast background, and neighboring colors that contrast with the animal. The duck uses blue, purple and pink flowers instead of orange/yellow leaves. Book 1 covers the initial consonants except D; Book 2 must include D and reinforce the rest. No reading mastery is inferred from this coverage.
+
+
+Current delivery: one PDF plus one assets folder (ZIP for releases); no extra page or illustration archives. Explicit completeness checks require two pages for every animal, including llama and oso.

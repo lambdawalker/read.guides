@@ -1,10 +1,8 @@
 schema_version: 1
 id: 01-se-cayo
-version: 1.0.0
+version: 1.1.0
 title: Se cayó
 language: es-MX
-page_size_inches: 8
-dpi: 200
 font: fonts/DejaVuSans.ttf
 font_size_pt: 32
 text_baseline: 0.105
@@ -50,3 +48,12 @@ pages:
 - image: images/12-oso.png
   text: El oso se cayó.
   animal: oso
+page_width_inches: 12
+page_height_inches: 8
+animals:
+- pato
+- gato
+- mono
+- vaca
+- llama
+- oso
